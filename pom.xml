@@ -8,10 +8,11 @@
     <name>spring3 mvc maven</name>
 
     <properties>
-        <jdk.version>1.8</jdk.version> <!-- Updated to 1.8 -->
-        <spring.version>3.2.13.RELEASE</spring.version>
-        <jstl.version>1.2</jstl.version>
+    <jdk.version>1.8</jdk.version> <!-- Updated to 1.8 -->
+    <spring.version>3.2.13.RELEASE</spring.version>
+    <jstl.version>1.2</jstl.version>
     </properties>
+
 
     <dependencies>
         <dependency>
@@ -29,14 +30,16 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version> <!-- Updated to a recent version -->
-                <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
-                </configuration>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version> <!-- Use a more recent version -->
+    <configuration>
+        <source>${jdk.version}</source>
+        <target>${jdk.version}</target>
+    </configuration>
             </plugin>
+
+            
 
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
